@@ -39,23 +39,29 @@ void main() {
 
 print_array(test,SIZE);
 sort_array(test,SIZE);
+print_statistics(test);
 }
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions */
 
 void print_statistics(unsigned char *array){
-
+printf("==========Statistical analytics============\n");
+ printf("Median :  %d\n",find_median(array,SIZE));
 }
 
 void print_array(unsigned char *array,unsigned int length){
+  printf("The given array: ");
   for (unsigned int i=0;i<length;i++)
     printf("%d ",array[i]);
   printf("\n\n");
 }
 
 int find_median(unsigned char *array,unsigned int length){
-
+  if (length%2==0)
+  	return (array[length/2]+array[length/2+1])/2;  //Array is sorted descending
+  else
+	return array[(length-1)/2];
 }
 
 int find_mean(unsigned char *array,unsigned int length){
