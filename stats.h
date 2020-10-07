@@ -23,20 +23,96 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/* Declarations and Function Comments */ 
+void print_statistics(unsigned char *array);
+/********************************** 
+ * @brief Prints statistical data
+ *
+ * This function takes an array input
+ * and will return the statistical data.
+ * of the array including maximum,minimum,mean, and median.
+ *
+ * @param array An unsingned char pointer to elements of a dataset.
+ *
+ * @return none
+ **********************************/
 
-/**
- * @brief <Add Brief Description of Function Here>
+void print_array(unsigned char *array,unsigned int length);
+/********************************** 
+ * @brief Prints elements of an array
  *
- * <Add Extended Description Here>
+ * This function takes an array and its lenght as inputs.
+ * It will elements of the array to the screen
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param array An unsigned char pointer to elements of a dataset.
+ * @param length An unsinged integer as the size of the array.
  *
- * @return <Add Return Informaiton here>
- */
+ * @return none
+ **********************************/
 
+int find_median(unsigned char *array,unsigned int length);
+/********************************** 
+ * @brief Returns the median value of an array
+ *
+ * This function takes an array and its length as inputs.
+ * It will calculate and return the median value.
+ *
+ * @param array An unsigned char pointer to elements of a dataset.
+ * @param length An unsinged integer as the size of the array.
+ *
+ * @return an integer median value of the given array.
+ **********************************/
+
+int find_mean(unsigned char *array,unsigned int length);
+/********************************** 
+ * @brief Returns the mean value of an array
+ *
+ * This function takes an array and its length as inputs.
+ * It will calculate and return the mean value.
+ *
+ * @param array An unsigned char pointer to elements of a dataset.
+ * @param length An unsinged integer as the size of the array.
+ *
+ * @return an integer mean value of the given array.
+ **********************************/
+
+int find_maximum(unsigned char *array,unsigned int length);
+/********************************** 
+ * @brief Returns the maximum value of an array.
+ *
+ * This function takes an array and its length as inputs.
+ * It will calculate and return the maximum value element.
+ *
+ * @param array An unsigned char pointer to elements of a dataset.
+ * @param length An unsinged integer as the size of the array.
+ *
+ * @return an integer maximum value of the given array.
+ **********************************/
+
+int find_minimum(unsigned char *array,unsigned int length);
+/********************************** 
+ * @brief Returns the minimum value of an array
+ *
+ * This function takes an array and its length as inputs.
+ * It will calculate and return the median value element.
+ *
+ * @param array An unsigned char pointer to elements of a dataset.
+ * @param length An unsinged integer as the size of the array.
+ *
+ * @return an integer minimum value of the given array.
+ **********************************/
+
+void sort_array(unsigned char *array,unsigned int length);
+/********************************** 
+ * @brief Sorts a array in a descending order.
+ *
+ * This function takes an array and its length as inputs.
+ * It will sort the array from largest to smallest element.
+ *
+ * @param array An unsigned char pointer to elements of a dataset.
+ * @param length An unsinged integer as the size of the array.
+ *
+ * @return none
+ **********************************/
 
 #endif /* __STATS_H__ */

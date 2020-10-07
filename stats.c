@@ -38,7 +38,35 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
+  /* Statistics and Printing Functions */
+
+void print_statistics(unsigned char *array){
+
+}
+
+void print_array(unsigned char *array,unsigned int length){
+
+}
+
+int find_median(unsigned char *array,unsigned int length){
+
+}
+
+int find_mean(unsigned char *array,unsigned int length){
+
+}
+
+int find_maximum(unsigned char *array,unsigned int length){
+
+}
+
+int find_minimum(unsigned char *array,unsigned int length){
+
+}
+
+void sort_array(unsigned char *array,unsigned int length){
+
+}
 
 }
 
