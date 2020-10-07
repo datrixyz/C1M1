@@ -46,9 +46,12 @@ print_statistics(test);
   /* Statistics and Printing Functions */
 
 void print_statistics(unsigned char *array){
-printf("==========Statistical analytics============\n");
- printf("Median :  %d\n",find_median(array,SIZE));
- printf("Mean   :  %d\n",find_mean(array,SIZE));
+  printf("==========Statistical analytics============\n");
+  printf("Median :  %d\n",find_median(array,SIZE));
+  printf("Mean   :  %d\n",find_mean(array,SIZE));
+  printf("Maximum:  %d\n",find_maximum(array,SIZE));
+  printf("Minimum:  %d\n",find_minimum(array,SIZE));
+  printf("===========================================\n");
 }
 
 void print_array(unsigned char *array,unsigned int length){
@@ -73,11 +76,11 @@ int find_mean(unsigned char *array,unsigned int length){
 }
 
 int find_maximum(unsigned char *array,unsigned int length){
-
+  return array[0];  //array sorted in a descending order
 }
 
 int find_minimum(unsigned char *array,unsigned int length){
-
+  return array[length-1];  //last element in sorted array is the minimum element
 }
 
 void sort_array(unsigned char *array,unsigned int length){
