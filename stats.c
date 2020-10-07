@@ -51,6 +51,7 @@ void print_statistics(unsigned char *array){
 void print_array(unsigned char *array,unsigned int length){
   for (unsigned int i=0;i<length;i++)
     printf("%d ",array[i]);
+  printf("\n\n");
 }
 
 int find_median(unsigned char *array,unsigned int length){
