@@ -102,7 +102,7 @@ int find_minimum(unsigned char *array,unsigned int length);
  * @return an integer minimum value of the given array.
  **********************************/
 
-void sort_array(unsigned char *array,unsigned int length);
+void  sort_array(unsigned char *array,unsigned int length);
 /********************************** 
  * @brief Sorts a array in a descending order.
  *
