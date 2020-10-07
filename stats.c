@@ -48,6 +48,7 @@ print_statistics(test);
 void print_statistics(unsigned char *array){
 printf("==========Statistical analytics============\n");
  printf("Median :  %d\n",find_median(array,SIZE));
+ printf("Mean   :  %d\n",find_mean(array,SIZE));
 }
 
 void print_array(unsigned char *array,unsigned int length){
@@ -65,7 +66,10 @@ int find_median(unsigned char *array,unsigned int length){
 }
 
 int find_mean(unsigned char *array,unsigned int length){
-
+  int sum=0;
+  for (unsigned int i=0;i<length;i++)
+	sum+=(int)array[i];
+  return sum/length;
 }
 
 int find_maximum(unsigned char *array,unsigned int length){
